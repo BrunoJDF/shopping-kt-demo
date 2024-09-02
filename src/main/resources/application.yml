@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: shopping-cart
+  datasource:
+    url: jdbc:postgresql://db-shopping-cart:5432/shopping-cart
+    username: postgres
+    password: password
+
