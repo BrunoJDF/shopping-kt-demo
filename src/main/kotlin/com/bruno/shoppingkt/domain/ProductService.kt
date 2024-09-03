@@ -1,6 +1,8 @@
 package com.bruno.shoppingkt.domain
 
+import com.bruno.shoppingkt.application.response.ProductResponse
+
 interface ProductService {
 
-    fun getAllProducts(): List<Product>
+    fun getAllProducts(): List<ProductResponse>
 }
