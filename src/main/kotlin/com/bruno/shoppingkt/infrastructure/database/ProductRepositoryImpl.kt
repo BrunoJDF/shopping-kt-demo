@@ -2,9 +2,12 @@ package com.bruno.shoppingkt.infrastructure.database
 
 import com.bruno.shoppingkt.domain.Product
 import com.bruno.shoppingkt.domain.ProductRepository
+import org.springframework.stereotype.Repository
 
-class ProductRepositoryImpl: ProductRepository {
+@Repository
+class ProductRepositoryImpl(var crudProductRepository: CrudProductRepository) : ProductRepository {
+
     override fun findAll(): List<Product> {
-        TODO("Not yet implemented")
+        return crudProductRepository.findAll().toList()
     }
 }
