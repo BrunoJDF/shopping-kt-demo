@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service
 class CreateProductUseCase(var productRepository: ProductRepository) {
 
     fun createProduct(productRequest: ProductRequest): ProductResponse {
-        val toSave = ProductRequest.toProduct(productRequest)
+        val toSave = productRequest.toProduct()
         val product = productRepository.create(toSave)
         return ProductResponse.fromProduct(product)
     }

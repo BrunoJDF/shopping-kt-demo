@@ -6,10 +6,10 @@ import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
-class GetProductController(var productService: GetAllProductUseCase): ProductController {
+class GetProductController(var getAllProductUseCase: GetAllProductUseCase): ProductController {
 
     @GetMapping("/get-all")
     fun getAllProducts(): List<ProductResponse> {
-        return productService.getAllProducts()
+        return getAllProductUseCase.getAllProducts()
     }
 }
