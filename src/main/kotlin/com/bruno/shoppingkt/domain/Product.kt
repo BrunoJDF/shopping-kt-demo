@@ -19,4 +19,6 @@ class Product(
     override fun toString(): String {
         return "Product(id=$id, name='$name', price=$price)"
     }
+
+    constructor(name: String, price: Double) : this(0, name, price)
 }

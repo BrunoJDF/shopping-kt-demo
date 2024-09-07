@@ -10,4 +10,8 @@ class ProductRepositoryImpl(var crudProductRepository: CrudProductRepository) : 
     override fun findAll(): List<Product> {
         return crudProductRepository.findAll().toList()
     }
+
+    override fun create(toProduct: Product): Product {
+        return crudProductRepository.save(toProduct)
+    }
 }
