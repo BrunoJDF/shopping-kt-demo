@@ -10,8 +10,18 @@ spring:
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
+  sql:
+    init:
+      schema-locations: classpath:schema.sql
+      mode: always
   datasource:
     url: jdbc:postgresql://localhost:5432/shopping-cart
     username: root
     password: pwd
+logging:
+  level:
+    org:
+      springframework:
+        jdbc: debug
+    web: debug
 
