@@ -1,6 +1,6 @@
-package com.bruno.shoppingkt.infrastructure.request
+package com.bruno.shoppingkt.product.infrastructure.request
 
-import com.bruno.shoppingkt.application.port_in.CreateProduct
+import com.bruno.shoppingkt.product.application.port_in.CreateProduct
 
 data class ProductRequest (
     val name: String,

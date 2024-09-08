@@ -1,6 +1,6 @@
-package com.bruno.shoppingkt.application.port_in
+package com.bruno.shoppingkt.product.application.port_in
 
-import com.bruno.shoppingkt.domain.Product
+import com.bruno.shoppingkt.product.domain.Product
 
 data class CreateProduct (
     val name: String,

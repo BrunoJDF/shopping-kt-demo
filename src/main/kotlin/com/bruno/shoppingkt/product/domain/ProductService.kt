@@ -1,4 +1,4 @@
-package com.bruno.shoppingkt.domain
+package com.bruno.shoppingkt.product.domain
 
 interface ProductService {
     fun findAll(): List<Product>

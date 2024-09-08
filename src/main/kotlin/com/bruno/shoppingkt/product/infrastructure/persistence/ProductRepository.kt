@@ -1,7 +1,7 @@
-package com.bruno.shoppingkt.infrastructure.persistence
+package com.bruno.shoppingkt.product.infrastructure.persistence
 
-import com.bruno.shoppingkt.domain.Product
-import com.bruno.shoppingkt.domain.ProductService
+import com.bruno.shoppingkt.product.domain.Product
+import com.bruno.shoppingkt.product.domain.ProductService
 import org.springframework.stereotype.Repository
 
 @Repository

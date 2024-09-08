@@ -1,7 +1,7 @@
-package com.bruno.shoppingkt.application
+package com.bruno.shoppingkt.product.application
 
-import com.bruno.shoppingkt.application.port_out.ProductResponse
-import com.bruno.shoppingkt.domain.ProductService
+import com.bruno.shoppingkt.product.application.port_out.ProductResponse
+import com.bruno.shoppingkt.product.domain.ProductService
 import org.springframework.stereotype.Service
 
 @Service

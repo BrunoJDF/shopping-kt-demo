@@ -1,4 +1,4 @@
-package com.bruno.shoppingkt.infrastructure.controller
+package com.bruno.shoppingkt.product.infrastructure.controller
 
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
