@@ -1,14 +1,14 @@
 package com.bruno.shoppingkt.application
 
 import com.bruno.shoppingkt.application.response.ProductResponse
-import com.bruno.shoppingkt.domain.ProductRepository
+import com.bruno.shoppingkt.domain.ProductService
 import org.springframework.stereotype.Service
 
 @Service
-class GetAllProductUseCase(var productRepository: ProductRepository) {
+class GetAllProductUseCase(var productService: ProductService) {
 
     fun getAllProducts(): List<ProductResponse> {
-        return productRepository.findAll()
+        return productService.findAll()
             .map { ProductResponse.fromProduct(it) }
     }
 }

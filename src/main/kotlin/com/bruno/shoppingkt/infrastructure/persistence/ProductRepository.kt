@@ -1,11 +1,11 @@
-package com.bruno.shoppingkt.infrastructure.database
+package com.bruno.shoppingkt.infrastructure.persistence
 
 import com.bruno.shoppingkt.domain.Product
-import com.bruno.shoppingkt.domain.ProductRepository
+import com.bruno.shoppingkt.domain.ProductService
 import org.springframework.stereotype.Repository
 
 @Repository
-class ProductRepositoryImpl(var crudProductRepository: CrudProductRepository) : ProductRepository {
+class ProductRepository(var crudProductRepository: CrudProductRepository) : ProductService {
 
     override fun findAll(): List<Product> {
         return crudProductRepository.findAll().toList()

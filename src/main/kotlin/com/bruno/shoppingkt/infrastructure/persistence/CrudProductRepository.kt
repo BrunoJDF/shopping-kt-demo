@@ -1,4 +1,4 @@
-package com.bruno.shoppingkt.infrastructure.database
+package com.bruno.shoppingkt.infrastructure.persistence
 
 import com.bruno.shoppingkt.domain.Product
 import org.springframework.data.repository.CrudRepository
