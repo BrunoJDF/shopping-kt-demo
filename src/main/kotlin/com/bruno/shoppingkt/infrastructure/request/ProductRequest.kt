@@ -1,12 +1,12 @@
 package com.bruno.shoppingkt.infrastructure.request
 
-import com.bruno.shoppingkt.domain.Product
+import com.bruno.shoppingkt.application.port_in.CreateProduct
 
 data class ProductRequest (
     val name: String,
     val price: Double
 ) {
-    fun toProduct(): Product {
-        return Product(name, price)
+    fun toCreateProduct(): CreateProduct {
+        return CreateProduct(name, price)
     }
 }

@@ -1,7 +1,7 @@
 package com.bruno.shoppingkt.infrastructure.controller
 
 import com.bruno.shoppingkt.application.CreateProductUseCase
-import com.bruno.shoppingkt.application.response.ProductResponse
+import com.bruno.shoppingkt.application.port_out.ProductResponse
 import com.bruno.shoppingkt.infrastructure.request.ProductRequest
 import org.springframework.web.bind.annotation.PostMapping
 import org.springframework.web.bind.annotation.RequestBody
@@ -12,6 +12,6 @@ class PostProductController(var createProductUseCase: CreateProductUseCase): Pro
 
     @PostMapping("/create")
     fun createProduct(@RequestBody productRequest: ProductRequest): ProductResponse {
-        return createProductUseCase.createProduct(productRequest)
+        return createProductUseCase.createProduct(productRequest.toCreateProduct())
     }
 }

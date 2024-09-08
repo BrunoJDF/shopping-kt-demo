@@ -1,4 +1,4 @@
-package com.bruno.shoppingkt.application.response
+package com.bruno.shoppingkt.application.port_out
 
 import com.bruno.shoppingkt.domain.Product
 
