@@ -17,5 +17,5 @@ class Product(
         return "Product(id=$id, name='$name', price=$price)"
     }
 
-    constructor(name: String, price: Double) : this(0, name, price)
+    constructor(name: String, price: Double) : this(id = 0, name = name, price = price)
 }
