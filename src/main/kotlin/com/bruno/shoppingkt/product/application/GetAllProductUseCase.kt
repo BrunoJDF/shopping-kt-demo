@@ -11,4 +11,9 @@ class GetAllProductUseCase(var productService: ProductService) {
         return productService.findAll()
             .map { ProductResponse.fromProduct(it) }
     }
+
+    fun getProductById(productId: Long): ProductResponse {
+        val product = productService.findById(productId)
+        return ProductResponse.fromProduct(product)
+    }
 }
